@@ -3,7 +3,7 @@ Description=Hello API
 
 [Service]
 Type=simple
-ExecStart=/home/ubuntu/bin/main
+ExecStart=/home/ubuntu/bin/hello-api
 Restart=always
 RestartSec=5s
 
