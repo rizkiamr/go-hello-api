@@ -19,4 +19,4 @@ USER nobody:nobody
 WORKDIR /
 COPY --from=build /opt/build/main .
 ENV GIN_MODE=release
-CMD ./main
+ENTRYPOINT []
