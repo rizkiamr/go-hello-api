@@ -1,10 +1,11 @@
 [Unit]
-Description=Hello API [place under ~/.config/systemd/user]
+Description=Hello API
 
 [Service]
 Type=simple
 ExecStart=/home/ubuntu/bin/main
 Restart=always
+RestartSec=5s
 
 [Install]
 WantedBy=multi-user.target
