@@ -12,7 +12,7 @@ RUN go mod download
 COPY . .
 
 # do the build
-RUN CGO_ENABLED=0 GOOS=LINUX GOARCH=amd64 go build -o main main.go
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o main main.go
 
 FROM gcr.io/distroless/static
 USER nobody:nobody
